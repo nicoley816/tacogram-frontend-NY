@@ -5,8 +5,8 @@ function getPostsFromAPI() {
     alert('Error: Replace url value in tacostagram.js')
   }
 
-  // Make a GET request to the API
-  fetch(url)
+  // Make a GET request to the API, get back response
+  fetch(url) 
     .then(response => response.json()) // Parse the response as JSON
     .then(posts => {
       // Loop through the array of posts and build html for each
